@@ -1,0 +1,66 @@
+<!-- <style>
+    .overlay{
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        opacity: 0.8;
+        z-index: 1;
+        display: none;
+    }
+    .popupbox{
+        position: absolute;
+        z-index: 3;
+        background-color: white;
+        color: black;
+        width: 40%;
+        padding: 20px;
+        border-radius: 10px;
+        left: 30%;
+        display: none;
+
+    }
+</style>
+<button onclick="Show()">Show</button>
+<div class="overlay"></div>
+<div class="popupbox">
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae aperiam eligendi modi, nobis accusamus nam temporibus quasi blanditiis sequi velit consectetur nesciunt doloremque qui rem laborum facere sapiente necessitatibus esse maiores vitae labore dolorem alias placeat! Odio animi aperiam impedit at rerum asperiores! Minus sunt excepturi et aliquam mollitia laboriosam!</p>
+<button onclick="closepopup()">close</button>
+</div>
+<script>
+   var popupoverlay = document.querySelector(".overlay")
+   var popupbox = document.querySelector(".popupbox")
+   function Show()
+   {
+    popupbox.style.display="block"
+    popupoverlay.style.display="block"
+   }
+   function closepopup()
+   {
+     popupbox.style.display="none"
+    popupoverlay.style.display="none"
+   }
+</script> -->
+
+<!-- <button onclick="alertmessage()">Show</button>
+<script>
+    function alertmessage()
+    {
+        alert("hello")
+    }
+</script> -->
+
+<button id="btn">Show</button>
+<script>
+    var button = document.getElementById("btn")
+    button.addEventListener("click",function(){
+        
+        alert("hello")
+    })
+    button.addEventListener("mouseover",function(){
+        alert("mouse over")
+    })
+
+</script>
